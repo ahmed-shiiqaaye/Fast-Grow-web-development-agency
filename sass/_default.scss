@@ -1,0 +1,45 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&family=Nunito&family=Oswald:wght@300;400;500;700&family=Poppins:wght@400;500&family=Satisfy&display=swap');
+
+
+$trision : all .3s ease-in-out;
+
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Oswald', sans-serif;
+}
+.container{
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+@mixin flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+@mixin grid($xx) {
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax($xx,1fr));
+}
+@mixin btn($p1, $p2) {
+    padding: $p1 $p2;
+    background: transparent;
+    border: 1px solid black;
+    transition: $trision;
+    cursor: pointer;
+    &:hover{
+        background: black;
+        color: white;
+        border: 1px solid white;
+    }
+}
+i{
+    pointer-events: none;
+}
