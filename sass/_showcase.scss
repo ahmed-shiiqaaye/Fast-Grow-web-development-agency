@@ -12,6 +12,22 @@
             font-size: 65px;
             color: rgb(255, 255, 255);
             text-align: center;
+            text-transform: uppercase;
         }
+    }
+}
+@media (max-width:991px) {
+    .showcase .container h1{
+        font-size: 55px;
+    }
+}
+@media (max-width:776px) {
+    .showcase .container h1{
+        font-size: 45px;
+    }
+}
+@media (max-width:576px) {
+    .showcase .container h1{
+        font-size: 39px;
     }
 }

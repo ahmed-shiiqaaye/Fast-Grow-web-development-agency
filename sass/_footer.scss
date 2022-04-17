@@ -1,0 +1,73 @@
+.footer{
+    padding: 20px 0;
+    background: rgba(0, 0, 0, 1);
+    color: white;
+    .container{
+        max-width: 1300px;
+        .grid{
+            @include  grid(250px);
+            gap: 20px;
+            row-gap: 40px;
+            padding-top: 30px;
+            padding-bottom: 40px;
+            .col{
+                h2{
+                    text-transform: uppercase;
+                    margin-bottom: 15px;
+                }
+                ul{
+                    li{
+                        color: rgba(255, 255, 255, 0.4);
+                        text-transform: uppercase;
+                        font-size: 15;
+                        margin-bottom: 6px;
+                        display: flex;
+                        justify-content: flex-start;
+                        align-items: center;
+                        .icon{
+                            height: 30px;
+                            width: 30px;
+                            background: orange;
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            margin-right: 8px;
+                            color: black;
+                            opacity: 1;
+                            clip-path: polygon(50% 0, 100% 25%, 100% 75%, 56% 100%, 0 75%, 0 25%);
+                        }
+                        
+                    }
+                }
+                p.underline{
+                    color: orange;
+                    margin-bottom: 8px;
+                    border-bottom: 1px solid orange;
+                    display: inline-block;
+                }
+            }
+            .col:first-child{
+                p{
+                    font-family: poppins, "Helvetica Neue", Helvetica, sans-serif;
+                    line-height: 1.6;
+                    opacity: .6;
+                    color: rgba(255, 255, 255, 0.4);
+                    text-align: left;
+                    font-style: normal;
+                }
+            }
+        }
+        .line{
+            width: 95%;
+            height: 1px;
+            background: rgba(255, 255, 255, 0.09);
+        }
+        p:last-child{
+            text-align: center;
+            padding-top: 8px;
+            color: orange;
+            letter-spacing: .8px;
+            font-style: italic;
+        }
+    }
+}
