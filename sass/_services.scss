@@ -2,7 +2,8 @@
     .container{
         max-width: 800px;
         .grid{
-            @include grid(300px);
+            display: grid;
+            grid-template-columns: repeat(auto-fit,minmax(300px));
             gap: 20px;
             row-gap: 50px;
             .card{
