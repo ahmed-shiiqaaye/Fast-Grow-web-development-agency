@@ -1,9 +1,8 @@
-.services{
+ .home-services{
     .container{
-        max-width: 800px;
+        max-width: 1000px;
         .grid{
-            display: grid;
-            grid-template-columns: repeat(auto-fit,minmax(300px));
+            @include grid(340px)
             gap: 20px;
             row-gap: 50px;
             .card{
@@ -68,7 +67,7 @@
                     text-align: center;
                     margin-top: 20px;
                     color: rgba(0,0,0,.7);
-                    line-height: 1.4;
+                    line-height: 1.6;
                 }
                 &:hover{
                     img{
@@ -88,6 +87,7 @@
         .title{
             text-transform: uppercase;
             text-align: center;
+
         }
         .para{
             text-align: center;
@@ -180,6 +180,9 @@
                     }
                 }
             }
+            span{
+                color: orange;
+            }
         }
     }
 }
@@ -193,6 +196,7 @@
         }
     }
 }
+
 @media (max-width:866px) {
     .grow{
         .container{
@@ -209,3 +213,10 @@
         }
     }
 }
+@media (max-width:566px) {
+    .grow .container .flex .text h2,
+    .grow .container .flex .text p{
+        font-size: 22px;
+    }
+}
+
