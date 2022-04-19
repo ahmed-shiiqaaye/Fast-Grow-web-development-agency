@@ -124,35 +124,47 @@
 .testimonials{
     background: rgba(0, 0, 0,.05);
     padding: 50px 0;
+    position: relative;
     .container{
         padding: 0 10vw;
         .wrapper{
             display: flex;
-            padding: 0 10vw;
             overflow: hidden;
             scroll-behavior: smooth;
             position: relative;
-            // display: grid;
-            // grid-template-columns: repeat(auto-fit,minmax(300px,1fr));
-            // gap: 30px;
             .card{
                 text-align: center;
                 padding: 30px;
                 flex: 0 0 auto;
-                width: 450px;
-                margin-right: 400px;
+                width:100%;
+                margin-right: 40px;
                 img{
                     height: 100px;
                     width: 100px;
                     // border-radius: 100%;
-                    box-shadow: 4px 4px rgb(187, 144, 144);
+                    box-shadow: 4px 4px rgb(46, 13, 13);
                     flex: 0 0 auto;
                     margin-bottom: 20px;
                 }
                 .text{
+                    i{
+                        font-size: 40px;
+                    }
+                    p{
+                        opacity: .8;
+                    }
                     
                     .details{
                        margin-top: 30px;
+                       h4{
+                           font-weight: bold;
+                           text-transform: uppercase;
+                       }
+                       p{
+                           opacity: .6;
+                           font-style: italic;
+                           font-size: 14px;
+                       }
                     }
                 }
             }
@@ -165,11 +177,10 @@
 .testimonials .container .title .btn{
     position: absolute;
     width: 10vh;
-    height: 100vh;
+    height: 100px;
     // left: 0;
-    top: 0%;
+    top: 50%;
     transform: translateY(-50%);
-    border-radius: 100%;
     padding: 20px;
     border: 1px solid rgba(0, 0, 0,.3);
 }
