@@ -1,0 +1,29 @@
+.email{
+    background: white;
+    color: black;
+    .container{
+        .flex{
+            .div1{
+               .h1{
+                   color: black;
+                   margin-bottom: 30px;
+               }
+               div{
+                   margin: 0;
+                   p{
+                       color: black;
+                   }
+                   p:first-child{
+                    font-weight: 800;
+                    text-transform: uppercase;
+                    line-height: 1.6;
+                    margin: 1px;
+                    padding: 0;
+
+                   }
+               }
+               
+           }
+        }
+    }
+}

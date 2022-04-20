@@ -1405,6 +1405,7 @@ i {
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
+  padding: 10px;
 }
 
 .grow .container .flex .text h2, .grow .container .flex .text p {
@@ -1472,5 +1473,31 @@ i {
   .grow .container .flex .text p {
     font-size: 22px;
   }
+}
+
+.email {
+  background: white;
+  color: black;
+}
+
+.email .container .flex .div1 .h1 {
+  color: black;
+  margin-bottom: 30px;
+}
+
+.email .container .flex .div1 div {
+  margin: 0;
+}
+
+.email .container .flex .div1 div p {
+  color: black;
+}
+
+.email .container .flex .div1 div p:first-child {
+  font-weight: 800;
+  text-transform: uppercase;
+  line-height: 1.6;
+  margin: 1px;
+  padding: 0;
 }
 /*# sourceMappingURL=main.css.map */
