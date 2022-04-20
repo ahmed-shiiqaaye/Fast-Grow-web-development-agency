@@ -1,7 +1,6 @@
 let menuBar = document.querySelector('.menu-bar');
 let navLinks = document.querySelector('.nav-links');
 
-
 menuBar.onclick = () =>{
     navLinks.classList.toggle('remove');
     if(navLinks.classList.contains('remove')){
@@ -38,6 +37,18 @@ for (let i = 0; i < btnFilters.length; i++) {
     })
 }
 
+let goTop = document.querySelectorAll('.to-top');
+for (let i = 0; i < goTop.length; i++) {
+    
+    window.addEventListener('scroll',()=>{
+        let scrollHeight = window.pageYOffset;
+        if(scrollHeight > 400){
+            goTop[i].style.display = 'block'
+        }else{
+            goTop[i].style.display = 'none'
+        }
+    })
+}
 
 
 
