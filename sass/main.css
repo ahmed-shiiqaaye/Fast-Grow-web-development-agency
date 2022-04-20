@@ -1490,14 +1490,32 @@ i {
 }
 
 .email .container .flex .div1 div p {
+  color: rgba(0, 0, 0, 0.671);
+  margin: 0;
+  padding: 0;
+  font-size: 14px;
+}
+
+.email .container .flex .div1 div .h {
+  font-weight: 700;
+  text-transform: uppercase;
+  margin: 1px;
+  padding: 0;
+  font-family: arial;
+  margin-top: 10px;
   color: black;
 }
 
-.email .container .flex .div1 div p:first-child {
-  font-weight: 800;
-  text-transform: uppercase;
-  line-height: 1.6;
-  margin: 1px;
-  padding: 0;
+.email .container .flex .div2 h1 {
+  color: black;
+}
+
+.email .container .flex .div2 p {
+  color: black;
+  opacity: .7;
+}
+
+.email .container .flex .div2 button {
+  border-color: rgba(0, 0, 0, 0.3);
 }
 /*# sourceMappingURL=main.css.map */

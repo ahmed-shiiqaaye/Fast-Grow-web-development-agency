@@ -11,18 +11,34 @@
                div{
                    margin: 0;
                    p{
-                       color: black;
+                       color: rgba(0, 0, 0, 0.671);
+                       margin: 0;
+                       padding: 0;
+                       font-size: 14px;
                    }
-                   p:first-child{
-                    font-weight: 800;
+                   .h{
+                    font-weight: 700;
                     text-transform: uppercase;
-                    line-height: 1.6;
                     margin: 1px;
                     padding: 0;
-
+                    font-family: arial;
+                    margin-top: 10px;
+                    color: black;
                    }
                }
                
+           }
+           .div2{
+               h1{
+                   color: black;
+               }
+               p{
+                   color: black;
+                   opacity: .7;
+               }
+               button{
+                   border-color: rgba(0, 0, 0, 0.3);
+               }
            }
         }
     }
