@@ -12,51 +12,45 @@ menuBar.onclick = () =>{
 }
 
 // btns filter
-let btnFilters = document.querySelector('.btns');
+let btnFilters = document.querySelectorAll('.btns');
 let filterCard = document.querySelectorAll('.cardData');
 
 
-// window.onload = () =>{
-//     btnFilters.onclick = (e) =>{
-//         let selected = e.target;
-//         if(selected.classList.contains('btnFilter')){
-//             btnFilters.querySelector('.active').classList.remove('active');
-//             selected.classList.add('active');
-//             let filterName = selected.getAttribute('data-name');
-//             console.log(filterName)
+for (let i = 0; i < btnFilters.length; i++) {
+    btnFilters[i].addEventListener('click',(e)=>{
+        e.preventDefault();
+        let filterData = e.target.getAttribute('data-name');
+        console.log(filterData)
+        btnFilters[i].querySelector('.active').classList.remove('active');
+        e.target.classList.add('active')
 
-//             filterCard.forEach((card)=>{
-//                 let filterData = card.getAttribute('data-name');
-//                 if(filterData == filterName || filterName == 'all'){
-//                     card.classList.add('show')
-
-//                 }else{
-//                     card.classList.add('hide')
-//                     card.classList.remove('show');
-//                 }
-//             })
-//         }
-//     }
-    
-// }
-
-// slider
-let btnNext = document.querySelectorAll('.next');
-let btnPrev = document.querySelectorAll('.prev');
-let wrapperContainer = document.querySelectorAll('.wrapper');
-
-for (let i = 0; i < wrapperContainer.length; i++) {
-    let wrapper = wrapperContainer[i]
-    let containerW = wrapper.getBoundingClientRect().width;
-    btnNext[i].onclick = ()=>{
-        wrapper.scrollLeft += containerW;
-        console.log('ji')
-    }
-    btnPrev[i].onclick = ()=>{
-        wrapper.scrollLeft -= containerW;
-    }
-    
+        filterCard.forEach(card =>{
+            if(filterData == 'all'){
+                card.style.display = 'grid';
+            }else{
+                if(card.classList.contains(filterData)){
+                    card.style.display = 'grid'
+                }else{
+                    card.style.display = 'none'
+                }
+            }
+        })
+    })
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 let counters = document.querySelectorAll('.counters');
 let speed = 100;
