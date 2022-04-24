@@ -86,6 +86,21 @@ window.onload =() =>{
                
         }
         updateCount()
+    }
 }
 
+let tabContents = document.querySelectorAll('.tab-content .content');
+let tabBtns = document.querySelectorAll('.tab-btns button');
+
+tabBtns.forEach((tabbtn,i)=>{
+    tabbtn.onclick = () =>{
+        tabBtns.forEach(btn=>{
+            btn.classList.remove('active')
+        })
+        tabContents.forEach(content =>{
+            content.classList.remove('active')
+        })
+        tabContents[i].classList.add('active');
+        tabBtns[i].classList.add('active');
     }
+})
