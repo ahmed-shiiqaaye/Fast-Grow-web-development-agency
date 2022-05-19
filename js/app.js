@@ -104,3 +104,17 @@ tabBtns.forEach((tabbtn,i)=>{
         tabBtns[i].classList.add('active');
     }
 })
+
+let sliderScroll = document.querySelectorAll('.wrapper-slider');
+let btnNext = document.querySelectorAll('.next');
+let btnPrev = document.querySelectorAll('.prev');
+
+sliderScroll.forEach((slider, i)=>{
+    let sliderWidth = slider.getBoundingClientRect().width;
+    btnNext[i].addEventListener('click',()=>{
+        slider.scrollLeft += sliderWidth
+    })
+    btnPrev[i].addEventListener('click',()=>{
+        slider.scrollLeft -= sliderWidth
+    })
+})

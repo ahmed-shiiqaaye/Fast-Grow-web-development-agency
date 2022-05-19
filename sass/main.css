@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Josefin+Sans&family=Nunito&family=Oswald:wght@300;400;500;700&family=Poppins:wght@400;500&family=Satisfy&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Contrail+One&family=Fira+Sans:wght@400;500;600&family=Germania+One&family=Josefin+Sans&family=Lobster&family=Nunito&family=Oleo+Script&family=Oswald:wght@300;400;500;700&family=Poppins:wght@400;500&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -190,8 +191,8 @@ i {
 .showcase {
   height: 100vh;
   width: 100%;
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.3)), to(rgba(0, 0, 0, 0.3))), url(/img/Home.jpg) no-repeat center center/cover;
-  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(/img/Home.jpg) no-repeat center center/cover;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.2)), to(rgba(0, 0, 0, 0.2))), url(/img/Home.jpg) no-repeat center center/cover;
+  background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(/img/Home.jpg) no-repeat center center/cover;
 }
 
 .showcase .container {
@@ -209,9 +210,10 @@ i {
 
 .showcase .container h1 {
   font-size: 65px;
-  color: white;
+  color: #f9fff9;
   text-align: center;
-  text-transform: uppercase;
+  font-family: 'Contrail One', cursive;
+  text-transform: capitalize;
 }
 
 @media (max-width: 991px) {
@@ -325,6 +327,7 @@ i {
 }
 
 .about-showcase {
+  height: 60vh;
   background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.3)), to(rgba(0, 0, 0, 0.3))), url(/img/about.jpg) no-repeat center center/cover;
   background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(/img/about.jpg) no-repeat center center/cover;
 }
@@ -337,7 +340,7 @@ i {
 }
 
 .about {
-  padding: 80px 0 100px;
+  padding: 50px 0;
   overflow: hidden;
 }
 
@@ -375,7 +378,7 @@ i {
 }
 
 .team {
-  padding: 100px 0;
+  padding: 20px 0 100px;
 }
 
 .team .container {
@@ -487,8 +490,9 @@ i {
 }
 
 .work-showcase {
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.3)), to(rgba(0, 0, 0, 0.3))), url(/img/Work.jpg) no-repeat center center/cover;
-  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(/img/Work.jpg) no-repeat center center/cover;
+  height: 60vh;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.3)), to(rgba(0, 0, 0, 0.3))), url(https://images.unsplash.com/photo-1629904853716-f0bc54eea481?crop=entropy&cs=tinysrgb&fm=jpg&ixlib=rb-1.2.1&q=60&raw_url=true&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Nnx8ZGV2ZWxvcGVyc3xlbnwwfDB8MHx8&auto=format&fit=crop&w=600) no-repeat center center/cover;
+  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(https://images.unsplash.com/photo-1629904853716-f0bc54eea481?crop=entropy&cs=tinysrgb&fm=jpg&ixlib=rb-1.2.1&q=60&raw_url=true&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Nnx8ZGV2ZWxvcGVyc3xlbnwwfDB8MHx8&auto=format&fit=crop&w=600) no-repeat center center/cover;
 }
 
 .work .container .grid .card {
@@ -697,8 +701,9 @@ i {
 }
 
 .webdesign-showcase {
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.3)), to(rgba(0, 0, 0, 0.3))), url(/img/web.jpg) no-repeat center center/cover;
-  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(/img/web.jpg) no-repeat center center/cover;
+  height: 60vh;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.73)), to(rgba(0, 0, 0, 0.73))), url(https://media.istockphoto.com/photos/web-design-layout-sketch-drawing-software-media-www-and-graphic-picture-id827896866?b=1&k=20&m=827896866&s=170667a&w=0&h=Ro5xUyRB0z2-tyVXht5UwG_dWhgEg8bL4tg5jgGU1xg=) no-repeat center center/cover;
+  background: linear-gradient(rgba(0, 0, 0, 0.73), rgba(0, 0, 0, 0.73)), url(https://media.istockphoto.com/photos/web-design-layout-sketch-drawing-software-media-www-and-graphic-picture-id827896866?b=1&k=20&m=827896866&s=170667a&w=0&h=Ro5xUyRB0z2-tyVXht5UwG_dWhgEg8bL4tg5jgGU1xg=) no-repeat center center/cover;
 }
 
 .questions,
@@ -842,92 +847,86 @@ i {
 }
 
 .testimonials {
-  background: rgba(0, 0, 0, 0.05);
-  padding: 50px 0;
   position: relative;
 }
 
-.testimonials .container {
-  padding: 0 10vw;
-}
-
-.testimonials .container .wrapper {
+.testimonials .btn {
+  position: absolute;
+  top: 0;
+  width: 6vw;
+  height: 100%;
+  border: 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  overflow: hidden;
-  scroll-behavior: smooth;
-  position: relative;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  z-index: 99;
+  cursor: pointer;
 }
 
-.testimonials .container .wrapper .card {
-  text-align: center;
-  padding: 30px;
-  -webkit-box-flex: 0;
-      -ms-flex: 0 0 auto;
-          flex: 0 0 auto;
-  width: 100%;
-  margin-right: 40px;
+.testimonials .btn.prev {
+  background: -webkit-gradient(linear, left top, right top, from(#e7e6e6), to(rgba(255, 255, 255, 0.2)));
+  background: linear-gradient(to right, #e7e6e6, rgba(255, 255, 255, 0.2));
+  left: 0;
 }
 
-.testimonials .container .wrapper .card img {
-  height: 100px;
-  width: 100px;
-  -webkit-box-shadow: 4px 4px #2e0d0d;
-          box-shadow: 4px 4px #2e0d0d;
-  -webkit-box-flex: 0;
-      -ms-flex: 0 0 auto;
-          flex: 0 0 auto;
-  margin-bottom: 20px;
-}
-
-.testimonials .container .wrapper .card .text i {
-  font-size: 40px;
-  background: white;
-  height: 80px;
-  width: 80px;
-}
-
-.testimonials .container .wrapper .card .text p {
-  opacity: .8;
-}
-
-.testimonials .container .wrapper .card .text .details {
-  margin-top: 30px;
-}
-
-.testimonials .container .wrapper .card .text .details h4 {
-  font-weight: bold;
-  text-transform: uppercase;
-}
-
-.testimonials .container .wrapper .card .text .details p {
-  opacity: .6;
-  font-style: italic;
-  font-size: 14px;
-}
-
-.testimonials .container .wrapper::-webkit-scrollbar {
-  display: none;
-}
-
-.testimonials .container .title .btn {
-  position: absolute;
-  width: 10vh;
-  height: 100px;
-  top: 50%;
-  -webkit-transform: translateY(-50%);
-          transform: translateY(-50%);
-  padding: 20px;
-  border: 1px solid rgba(0, 0, 0, 0.3);
-}
-
-.btn.next {
+.testimonials .btn.next {
+  background: -webkit-gradient(linear, right top, left top, from(#e7e6e6), to(rgba(255, 255, 255, 0.2)));
+  background: linear-gradient(to left, #e7e6e6, rgba(255, 255, 255, 0.2));
   right: 0;
 }
 
-.btn.prev {
-  left: 0;
+.testimonials .wrapper {
+  padding: 0 5vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  overflow-x: auto;
+  position: relative;
+  scroll-behavior: smooth;
+}
+
+.testimonials .wrapper .card {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 auto;
+          flex: 0 0 auto;
+  width: 50%;
+  overflow: hidden;
+  margin-right: 60px;
+  text-align: center;
+  padding: 0 20px;
+}
+
+.testimonials .wrapper .card img {
+  width: 70px;
+  height: 70px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 100%;
+  border: 1px solid rgba(0, 0, 0, 0.43);
+  margin-bottom: 10px;
+}
+
+.testimonials .wrapper .card i {
+  font-size: 30px;
+  margin: 10px 0;
+}
+
+.testimonials .wrapper .card .text p {
+  opacity: .7;
+}
+
+.testimonials .wrapper .card .text .details {
+  margin-bottom: 40px;
+}
+
+.testimonials .wrapper::-webkit-scrollbar {
+  display: none;
 }
 
 .users {
@@ -989,8 +988,9 @@ i {
 }
 
 .development-showcase {
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.3)), to(rgba(0, 0, 0, 0.3))), url(/img/development.jpg) no-repeat center center/cover;
-  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(/img/development.jpg) no-repeat center center/cover;
+  height: 60vh;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.7)), to(rgba(0, 0, 0, 0.7))), url(https://media.istockphoto.com/photos/businessman-trading-online-stock-market-on-teblet-screen-digital-picture-id1311598658?b=1&k=20&m=1311598658&s=170667a&w=0&h=Ln_dpeXRkCDCZjuqOe2r7AlWP29xHFbc9wyKzxajloA=) no-repeat center center/cover;
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(https://media.istockphoto.com/photos/businessman-trading-online-stock-market-on-teblet-screen-digital-picture-id1311598658?b=1&k=20&m=1311598658&s=170667a&w=0&h=Ln_dpeXRkCDCZjuqOe2r7AlWP29xHFbc9wyKzxajloA=) no-repeat center center/cover;
 }
 
 .development-flex-image .container .flex .image-container {
@@ -1101,8 +1101,9 @@ i {
 }
 
 .marketing-showcase {
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.3)), to(rgba(0, 0, 0, 0.3))), url(/img/marketing.jpg) no-repeat center center/cover;
-  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(/img/marketing.jpg) no-repeat center center/cover;
+  height: 60vh;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.7)), to(rgba(0, 0, 0, 0.7))), url(https://media.istockphoto.com/photos/developing-marketing-strategy-development-of-effective-solution-picture-id1142528992?b=1&k=20&m=1142528992&s=170667a&w=0&h=mIGCP7AH6XCDXu81OBiFO8dVCBwTyhofsTo3G3lp2FY=) no-repeat center center/cover;
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(https://media.istockphoto.com/photos/developing-marketing-strategy-development-of-effective-solution-picture-id1142528992?b=1&k=20&m=1142528992&s=170667a&w=0&h=mIGCP7AH6XCDXu81OBiFO8dVCBwTyhofsTo3G3lp2FY=) no-repeat center center/cover;
 }
 
 .marketing {
@@ -1507,6 +1508,12 @@ i {
   }
 }
 
+.contact {
+  height: 80vh;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.7)), to(rgba(0, 0, 0, 0.7))), url(https://media.istockphoto.com/photos/shot-of-an-attractive-young-saleswoman-sitting-alone-in-the-office-picture-id1321256248?b=1&k=20&m=1321256248&s=170667a&w=0&h=-T6-PYWYzkAtm8zev1bSEg919wjfU-4YUMDZqzTb1o0=) no-repeat center center/cover;
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(https://media.istockphoto.com/photos/shot-of-an-attractive-young-saleswoman-sitting-alone-in-the-office-picture-id1321256248?b=1&k=20&m=1321256248&s=170667a&w=0&h=-T6-PYWYzkAtm8zev1bSEg919wjfU-4YUMDZqzTb1o0=) no-repeat center center/cover;
+}
+
 .email {
   background: white;
   color: black;
@@ -1548,6 +1555,7 @@ i {
 }
 
 .email .container .flex .div2 button {
+  cursor: pointer;
   border-color: rgba(0, 0, 0, 0.3);
 }
 
@@ -1565,6 +1573,7 @@ i {
   border-radius: 0;
   border: 1px solid rgba(0, 0, 0, 0.671);
   background: white;
+  cursor: pointer;
 }
 
 .email .container .flex .div1 .tab-container .tab-btns .tab-button.active {
